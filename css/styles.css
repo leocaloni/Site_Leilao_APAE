@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat&display=swap");
+
+#container-produtos {
+    padding-top: 90px;
+}
+
+#container-produtos img{
+    width: 80%;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+#container-produtos img:hover {
+    width: 85%;
+    transition: 0.4s;
+}
+
+#container-produtos .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nome-produto {
+    color: #fff;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+  }
+
+  #btn-lance {
+    background: transparent;
+    border: 2px solid #F4DB33;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.4s;
+    color: #F4DB33;
+  }
+
+  #btn-lance:hover {
+    background-color: #F4DB33;
+    color: black;
+    transition:0.4s;
+}
