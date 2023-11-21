@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Aviao de Brinquedo</title>
+</head>
+<body>
+    <header>
+            <a href="https://apaescsul.org.br"><img src="https://apaescsul.org.br/wp-content/uploads/2023/03/APAE-SCS.png"
+                    alt="" width="100px" height="50px"></a>
+    
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
+                <i class='bx bx-x-circle' style='color:#ffffff' id="close-icon"></i>
+            </label>
+    
+            <nav class="navigation">
+                <a href="/html/index.html" style="--i:0">Início</a>
+                <a href="https://apaescsul.org.br/sobre-a-apae/" style="--i:1">Sobre</a>
+                <a href="https://apaescsul.org.br/contato/" style="--i:2">Contato</a>
+                <a><button class="btnLogin-popup" style="--i:3">Login</button></a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esqueceu">
+                        <label><input type="checkbox">Lembre se de mim</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Nao tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esqueceu">
+                        <label><input type="checkbox">Eu concordo com os termos e condições</label>
+                    </div>
+                    <button type="submit" class="btn">Cadastre-se</button>
+                    <div class="login-register">
+                        <p>Ja tem uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    <div class="container_1">
+        <div class="imagem">
+         <img src="https://as2.ftcdn.net/v2/jpg/02/19/16/53/1000_F_219165360_pvNwlP8cctyzp5upagcOtMUaJ30iTH69.jpg" alt="Avião">
+        </div>
+        <div id="borda">
+        <div class="textos">
+          <div class="texto">
+            <h1>Aviao de Brinquedo</h1>
+          </div>
+          <div class="texto">
+            <h2>Lance Inicial = 100R$</h2>
+          </div>
+          <div class="mb-4">
+            <labal class="botao">Valor a ser inserido: </labal>
+            <input class="valor" id="valor" type="text" name="valor" size="10">
+          </div>
+          <div>
+            <button id="btn-lance">DAR LANCE AGORA</button>
+          </div>
+          <div id="borda">
+            <p>O Aviao e um produto que esta listado para divertir e entreter as criancas que carentes, e que precisam de ajuda, todo o dinheiro arrecadado com o leilao sera revertido em doacao para nossa instituicao</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </body>
+    </html>
