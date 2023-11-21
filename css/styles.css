@@ -46,6 +46,7 @@
 #imagem-prod {
   margin-top: 100px;
   width: 80%;
+  border-radius: 10%;
 }
 
 #texto-prod {
@@ -55,12 +56,49 @@
 
 #linha-tabela{
   text-align: left;
+  color: black;
   padding: 10px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
   background-color: #F4DB33;
 }
 
-#botao-prod {
-  margin-top: 100px;
+#tabela-produto th{
+  border-left: none;
 }
 
+#tabela-produto {
+  box-shadow: 0 0 0 0.7px black;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+#botao-prod {
+  margin-top: 100px;
+  background-color: #F4DB33;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#valor {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: #406cf1;
+  border: solid 0.6px;
+  border-radius: 8px;
+  transition:all 0.4s;
+}
+
+#valor:hover {
+  transition:all 0.4s;;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+#texto-dar-lance{
+  margin-top: 10px;
+}

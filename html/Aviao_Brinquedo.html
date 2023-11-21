@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,115 +11,140 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Aviao de Brinquedo</title>
 </head>
+
 <body>
     <header>
-            <a href="https://apaescsul.org.br"><img src="https://apaescsul.org.br/wp-content/uploads/2023/03/APAE-SCS.png"
-                    alt="" width="100px" height="50px"></a>
-    
-            <input type="checkbox" id="check">
-            <label for="check" class="icons">
-                <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
-                <i class='bx bx-x-circle' style='color:#ffffff' id="close-icon"></i>
-            </label>
-    
-            <nav class="navigation">
-                <a href="/html/index.html" style="--i:0">Início</a>
-                <a href="https://apaescsul.org.br/sobre-a-apae/" style="--i:1">Sobre</a>
-                <a href="https://apaescsul.org.br/contato/" style="--i:2">Contato</a>
-                <a><button class="btnLogin-popup" style="--i:3">Login</button></a>
-            </nav>
-        </header>
-        <div class="wrapper">
-            <span class="icon-close">
-                <ion-icon name="close-circle-outline"></ion-icon>
-            </span>
-            <div class="form-box login">
-                <h2>Login</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Senha</label>
-                    </div>
-                    <div class="lembrar-esqueceu">
-                        <label><input type="checkbox">Lembre se de mim</label>
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-register">
-                        <p>Nao tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
-                    </div>
-                </form>
-            </div>
-            <div class="form-box register">
-                <h2>Cadastro</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="person-outline"></ion-icon>
-                        </span>
-                        <input type="text" required>
-                        <label>Nome</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Senha</label>
-                    </div>
-                    <div class="lembrar-esqueceu">
-                        <label><input type="checkbox">Eu concordo com os termos e condições</label>
-                    </div>
-                    <button type="submit" class="btn">Cadastre-se</button>
-                    <div class="login-register">
-                        <p>Ja tem uma conta? <a href="#" class="login-link">Login</a></p>
-                    </div>
-                </form>
-            </div>
+        <a href="https://apaescsul.org.br"><img src="https://apaescsul.org.br/wp-content/uploads/2023/03/APAE-SCS.png"
+                alt="" width="100px" height="50px"></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
+            <i class='bx bx-x-circle' style='color:#ffffff' id="close-icon"></i>
+        </label>
+
+        <nav class="navigation">
+            <a href="/html/index.html" style="--i:0">Início</a>
+            <a href="https://apaescsul.org.br/sobre-a-apae/" style="--i:1">Sobre</a>
+            <a href="https://apaescsul.org.br/contato/" style="--i:2">Contato</a>
+            <a><button class="btnLogin-popup" style="--i:3">Login</button></a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="lembrar-esqueceu">
+                    <label><input type="checkbox">Lembre se de mim</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Nao tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+                </div>
+            </form>
         </div>
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="lembrar-esqueceu">
+                    <label><input type="checkbox">Eu concordo com os termos e condições</label>
+                </div>
+                <button type="submit" class="btn">Cadastre-se</button>
+                <div class="login-register">
+                    <p>Ja tem uma conta? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
     <div class="container-fluid" id="container-prod">
         <div class="row">
-        <div class="col-md-6">
-         <img src="https://as2.ftcdn.net/v2/jpg/02/19/16/53/1000_F_219165360_pvNwlP8cctyzp5upagcOtMUaJ30iTH69.jpg" alt="Avião" id="imagem-prod">
+            <div class="col-md-6">
+                <img src="https://as2.ftcdn.net/v2/jpg/02/19/16/53/1000_F_219165360_pvNwlP8cctyzp5upagcOtMUaJ30iTH69.jpg"
+                    alt="Avião" id="imagem-prod">
+            </div>
+            <div class="col-md-3" id="texto-prod">
+                <table id="tabela-produto">
+                    <tr>
+                        <th id="linha-tabela">Nome: </th>
+                        <td id="linha-tabela">Avião de brinquedo</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Material: </th>
+                        <td id="linha-tabela">Madeira</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Marca:</th>
+                        <td id="linha-tabela">Empresa X</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Público-alvo</th>
+                        <td id="linha-tabela">Crianças</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Condição:</th>
+                        <td id="linha-tabela">Novo</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Lance inicial:</th>
+                        <td id="linha-tabela">R$50,00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3" id="botao-prod">
+                <label id="texto-dar-lance"><h3>Dar lance:</h3> </label>
+                <p><input class="valor" id="valor" type="text" name="valor" size="10" placeholder="00,00"></p>
+                <p><h3>Últimos lances:</h3></p>
+            </div>
         </div>
-        <div class="col-md-3" id="texto-prod">
-            <table>
-                <tr>
-                    <th id="linha-tabela">Nome: </th>
-                    <td id="linha-tabela"> Avião de brinquedo</td>
-                </tr>
-                <tr>
-                    <th id="linha-tabela">Material: </th>
-                    <td id="linha-tabela"> Plástico</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-md-3" id="botao-prod">
-            <label class="botao">Valor a ser inserido: </label>
-            <input class="valor" id="valor" type="text" name="valor" size="10">
-        </div>
-        </div>
-      </div>
+    </div>
 
-      
-    </body>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
