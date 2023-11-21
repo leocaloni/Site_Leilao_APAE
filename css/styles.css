@@ -102,3 +102,16 @@
 #texto-dar-lance{
   margin-top: 10px;
 }
+#texto-retirada{
+  margin-top: -190px;
+  margin-left: 855px;
+  
+}
+
+.fonte{
+  font-size: medium;
+}
+#botao-lance{
+  background-color: #406cf1;
+  border-radius: 5px;
+}
