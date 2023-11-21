@@ -370,4 +370,8 @@ header::before {
   #row-produtos {
     text-align: center;
   } 
+
+  #imagem-prod {
+    max-width: 50%;
+  }
 }

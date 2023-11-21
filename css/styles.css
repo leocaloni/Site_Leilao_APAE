@@ -42,3 +42,25 @@
     color: black;
     transition:0.4s;
 }
+
+#imagem-prod {
+  margin-top: 100px;
+  width: 80%;
+}
+
+#texto-prod {
+  margin-top: 200px;
+  margin-left: -100px;
+}
+
+#linha-tabela{
+  text-align: left;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #F4DB33;
+}
+
+#botao-prod {
+  margin-top: 100px;
+}
+
