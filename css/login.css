@@ -116,11 +116,10 @@ header::before {
 }
 
 .wrapper {
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: 440px;
   background: rgba(0, 60, 255, 0.7);
-  background: transparent;
   border: 2px solid lightgray;
   border-radius: 20px;
   backdrop-filter: blur(20px);
@@ -265,7 +264,6 @@ header::before {
 .btn {
   width: 100%;
   height: 45px;
-  background-color: #f4db33;
   background: #f4db33;
   border: none;
   outline: none;
@@ -275,6 +273,7 @@ header::before {
   color: black;
   font-weight: 500;
 }
+
 
 .login-register {
   font-size: 0.9em;
