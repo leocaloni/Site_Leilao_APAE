@@ -64,20 +64,6 @@ app.post("/signup", async (req, res) => {
 });
 
 
-  app.post("/verificar-usuario", async (req, res) => {
-    try {
-      const login = req.body.login;
-      const email = req.body.email;
-
-      
-      const usuarioExistente = await Usuario.exists({ $or: [{ login }, { email }] });
-
-      res.json({ usuarioExistente });
-    } catch (error) {
-      console.error(error);
-      res.status(500).send("Erro interno do servidor.");
-    }
-  });
 
 
 

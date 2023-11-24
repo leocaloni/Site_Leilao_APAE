@@ -373,4 +373,14 @@ header::before {
   #imagem-prod {
     max-width: 50%;
   }
+
+  .wrapper {
+  left:23%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    left: 15%;
+  }
 }

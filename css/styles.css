@@ -122,3 +122,20 @@
   transition: 0.4s;
   background-color: #003df5;
 }
+
+.alert {
+  display: none;
+  width: 100%;
+  max-width: 400px; 
+  margin: 0 auto;
+  z-index: 9999; 
+  background-color: #F4DB33;
+  color: #fff;
+}
+
+
+
+.alert-success {
+  background-color: #F4DB33; 
+  color: #fff
+}

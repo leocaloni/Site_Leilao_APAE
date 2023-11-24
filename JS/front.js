@@ -53,24 +53,46 @@ async function cadastrarUsuario() {
     let login = loginInput.value;
     let email = emailInput.value;
     let senha = senhaInput.value;   
-    try {
-        const resposta = await fetch(URLcompleta, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ login, email, senha }),
-        });
+    const alert = document.querySelector('.alert');
 
-        if (resposta.ok) {
-            console.log('Usuário cadastrado com sucesso!');
-        } else {
-            console.error('Erro ao cadastrar usuário:', resposta.statusText);
-        }
-    } catch (erro) {
-        console.error('Erro ao cadastrar usuário:', erro);
+try {
+    const resposta = await fetch(URLcompleta, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ login, email, senha }),
+    });
+
+    if (resposta.ok) {
+        alert.textContent = 'Usuário cadastrado com sucesso!';
+        alert.classList.remove('alert-danger');
+        alert.classList.add('alert-success');
+    } else {
+        alert.textContent = `Erro ao cadastrar usuário: ${resposta.statusText}`;
+        alert.classList.remove('alert-success');
+        alert.classList.add('alert-danger');
     }
+
+    alert.style.display = 'flex'; 
+    alert.classList.add('show');
+    alert.style.position = 'fixed';
+    alert.style.top = '50%';
+    alert.style.left = '50%';
+    alert.style.transform = 'translate(-50%, -50%)';
+
+    setTimeout(() => {
+        alert.classList.remove('show');
+        alert.style.display = 'none'; 
+    }, 5000);
+
+} catch (erro) {
+    console.error('Erro ao cadastrar usuário:', erro);
+}
+
     
+    
+
 }
 
 
