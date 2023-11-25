@@ -4,6 +4,7 @@ const registerLink = document.querySelector(".register-link");
 const btnPopup = document.querySelector(".btnLogin-popup");
 const iconClose = document.querySelector(".icon-close");
 
+
 registerLink.addEventListener("click", () => {
   wrapper.classList.add("active");
 });
@@ -26,35 +27,49 @@ iconClose.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const valorInput = document.getElementById("valor");
 
-  // Adicionar "R$" inicialmente
   if (!valorInput.value.trim() || valorInput.value === "R$") {
     valorInput.value = "R$ ";
   }
 
-  // Adicionar "R$" quando o campo estiver em foco
   valorInput.addEventListener("focus", function () {
     if (!valorInput.value.trim() || valorInput.value === "R$") {
       valorInput.value = "R$ ";
     }
   });
 
-  // Adicionar "R$" quando o campo perder o foco, se estiver vazio
   valorInput.addEventListener("blur", function () {
     if (!valorInput.value.trim()) {
       valorInput.value = "R$ ";
     }
   });
 
-  // Permitir apenas números, vírgula e ponto decimal
   valorInput.addEventListener("input", function () {
     valorInput.value = valorInput.value.replace(/[^\d,\.]/g, "");
 
-    // Adicionar "R$" durante a digitação se necessário
     if (!valorInput.value.includes("R$")) {
       valorInput.value = "R$ " + valorInput.value;
     }
   });
 });
+
+//manter o login
+
+document.addEventListener("DOMContentLoaded", function () {
+  const userGreeting = document.getElementById('user-greeting');
+  const logoutButton = document.getElementById('logout-button');
+  const btnLogin = document.querySelector('.btnLogin-popup');
+
+  const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+  console.log('Usuario logado:', usuarioLogado);
+
+  if (usuarioLogado) {
+      userGreeting.textContent = `Olá, ${usuarioLogado.nome}!`;
+      userGreeting.classList.remove('d-none');
+      logoutButton.classList.remove('d-none');
+      btnLogin.style.display = 'none';
+  }
+});
+
 
 
 

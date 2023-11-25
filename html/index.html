@@ -26,6 +26,8 @@
                 <a href="/html/index.html" style="--i:0">Início</a>
                 <a href="https://apaescsul.org.br/sobre-a-apae/" style="--i:1">Sobre</a>
                 <a href="https://apaescsul.org.br/contato/" style="--i:2">Contato</a>
+                <a id="user-greeting" class="d-none"></a>
+                <a id="btn-logout"><button id="logout-button" class="d-none" onclick="realizarLogout()">Logout</button></a>
                 <a><button class="btnLogin-popup" style="--i:3">Login</button></a>
             </nav>
         </header>
@@ -54,7 +56,7 @@
                         <label><input type="checkbox">Lembre se de mim</label>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn" onclick="realizarLogin()">Login</button>
                     <div class="login-register">
                         <p>Nao tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
                     </div>

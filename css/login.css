@@ -61,6 +61,11 @@ header::before {
 #check {
   display: none;
 }
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .navigation a {
   position: relative;
@@ -95,6 +100,8 @@ header::before {
   display: none;
 }
 
+
+
 .navigation .btnLogin-popup {
   width: 130px;
   height: 50px;
@@ -107,12 +114,40 @@ header::before {
   color: #f4db33;
   font-weight: 500;
   margin-left: 40px;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 .navigation .btnLogin-popup:hover {
   background: #f4db33;
   color: #162938;
+}
+
+#logout-button {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #f4db33;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #f4db33;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s; 
+}
+
+#logout-button:hover {
+  background: #f4db33;
+  color: #162938;
+}
+
+#btn-logout:hover::after {
+  display: none;
+}
+
+#user-greeting:hover::after {
+  display: none;
 }
 
 .wrapper {
@@ -274,6 +309,15 @@ header::before {
   font-weight: 500;
 }
 
+.wrapper .btn {
+  background: #f4db33;
+  color: black;
+}
+
+.wrapper .btn:hover{
+  background: #e6c80a;
+  color: black;
+}
 
 .login-register {
   font-size: 0.9em;

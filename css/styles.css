@@ -139,3 +139,8 @@
   background-color: #F4DB33; 
   color: #fff
 }
+
+.tabela-lance #tabelas-lances {
+  border-collapse: collapse;
+  background-color:#003df5;
+}
