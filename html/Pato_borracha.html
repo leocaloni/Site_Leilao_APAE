@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Aviao de Brinquedo</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://apaescsul.org.br"><img src="https://apaescsul.org.br/wp-content/uploads/2023/03/APAE-SCS.png"
+                alt="" width="100px" height="50px"></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
+            <i class='bx bx-x-circle' style='color:#ffffff' id="close-icon"></i>
+        </label>
+
+        <nav class="navigation">
+            <a href="/html/index.html" style="--i:0">Início</a>
+            <a href="https://apaescsul.org.br/sobre-a-apae/" style="--i:1">Sobre</a>
+            <a href="https://apaescsul.org.br/contato/" style="--i:2">Contato</a>
+            <a id="user-greeting" class="d-none"></a>
+            <a id="btn-logout"><button id="logout-button" class="d-none" onclick="realizarLogout()">Logout</button></a>
+            <a><button class="btnLogin-popup" style="--i:3">Login</button></a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" id="login-email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" id="login-senha" required>
+                    <label>Senha</label>
+                </div>
+                <div class="lembrar-esqueceu">
+                    <label><input type="checkbox">Lembre se de mim</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn" onclick="realizarLogin()">Login</button>
+                <div class="login-register">
+                    <p>Nao tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" id="loginInput" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" id="emailInput" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" id="senhaInput" required>
+                    <label>Senha</label>
+                </div>
+                <div class="lembrar-esqueceu">
+                    <label><input type="checkbox">Eu concordo com os termos e condições</label>
+                </div>
+                <button type="submit" class="btn" onclick="cadastrarUsuario()">Cadastre-se</button>
+                <div class="login-register">
+                    <p>Ja tem uma conta? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" id="container-prod">
+        <div class="row">
+            <div class="col-md-6" id="div-img-prod">
+                <img src="https://as1.ftcdn.net/v2/jpg/00/57/01/24/1000_F_57012433_EIwmdg3XWlexaBDMiENygEJPdcemyxv2.jpg"
+                    alt="Avião" id="imagem-prod">
+            </div>
+            <div class="col-md-3" id="texto-prod">
+                <table id="tabela-produto">
+                    <tr>
+                        <th id="linha-tabela">Nome: </th>
+                        <td id="linha-tabela">Pato de Borracha</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Material: </th>
+                        <td id="linha-tabela">Borracha</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Marca:</th>
+                        <td id="linha-tabela">Empresa Y</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Público-alvo</th>
+                        <td id="linha-tabela">Crianças</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Condição:</th>
+                        <td id="linha-tabela">Novo</td>
+                    </tr>
+                    <tr>
+                        <th id="linha-tabela">Lance inicial:</th>
+                        <td id="linha-tabela">R$25,00</td>
+                    </tr>
+                </table>
+                <div id="texto-retirada">
+                <table id="tabela-produto">
+                    <tr>
+                        <th style="font-size: small;" id="linha-tabela">Onde retirar:</th>
+                        <td style="font-size: small;" id="linha-tabela">APAE SAO CAETANO</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: small;" id="linha-tabela">Horário de Retirada</th>
+                        <td style="font-size: small;" id="linha-tabela">A Combinar</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: small;" id="linha-tabela">Tempo restante do leilão</th>
+                        <td style="font-size: small;" id="linha-tabela">0D 23H 31min</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="col-md-3" id="botao-prod">
+                <label id="texto-dar-lance"><h3>Dar lance:</h3> </label>
+                <p><input class="valor" id="valor" type="text" name="valor" size="10" placeholder="00,00"></p>
+                <button id="botao-lance" onclick="cadastrarLance()">Enviar o lance</button>
+                <p><h3>Últimos lances:</h3></p>
+                <div class="tabela-lance" onload="obterLances()">
+                    <table class="table table-striped table-hover text-center lances" id="tabela-lances">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Valor do lance</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="alert" role="alert">
+            <span id="alertMessage"></span>
+        </div>
+    </div>
+
+    <footer style="margin-top: auto;">
+        <div class="redes-sociais">
+            <h1 style="font-size: 25px;">Contatos APAE</h1>
+            <a href="https://www.instagram.com/apaesaocaetano/" target="_blank" style="display: inline-flex;">
+                <img src="imagens\Instagram.png" alt="Instagram" width="30" height="30">
+                <p style="padding: 2px;">Instagram</p>
+            </a>
+            <a href="https://www.facebook.com/ApaeSaoCaetano/?locale=pt_BR" style="display: inline-flex;">
+                <img src="imagens/facebook.png" alt="Facebook" width="30" height="30">
+                <p style="padding: 2px;">Facebook</p>
+            </a>
+            <div style="display: inline-flex; align-items: center;">
+                <img src="imagens/telefone.png" alt="Telefone" width="30" height="30" style="margin-right: 5px;">
+                <p style="margin: 0;">(11) 4224-0670</p>
+            </div>
+            <p>Rua:
+                Alameda São Caetano, 2772
+                Bairro Santa Maria
+                São Caetano do Sul - SP
+                apaescsul@apaescsul.org.br</p>
+        </div>
+    </footer>
+
+    <script src="/JS/front.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="/JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
