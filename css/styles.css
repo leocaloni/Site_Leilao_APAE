@@ -144,3 +144,23 @@
   border-collapse: collapse;
   background-color:#003df5;
 }
+
+@media (max-width: 768px) {
+  
+  
+  #div-img-prod {
+    text-align: center;
+  }
+
+  #texto-prod {
+    text-align: center;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+
+  #botao-prod {
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+}
