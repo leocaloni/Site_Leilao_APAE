@@ -18,12 +18,12 @@ const usuarioSchema = mongoose.Schema({
 
 usuarioSchema.plugin(uniqueValidator);
 const Usuario = mongoose.model("Usuario", usuarioSchema);
-
+//conexao com o banco
 async function conectarMongoDB() {
   await mongoose.connect(`mongodb+srv://leocaloni:1234@cluster0.9luxuel.mongodb.net/?retryWrites=true&w=majority`);
 }
 
-
+//criar usuario de login para o bando de dados
 app.post("/signup", async (req, res) => {
   try {
     const login = req.body.login;
@@ -40,7 +40,7 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-
+//chamada pra login banco de dados
 app.post("/login", async (req, res) => {
   try {
       console.log('Rota /login foi chamada');
@@ -74,7 +74,7 @@ app.post("/login", async (req, res) => {
 });
 
 
-
+//deslogar a conta do site
 app.post("/logout", (req, res) => {
   res.status(200).send("Logout realizado com sucesso.");
 });
@@ -86,7 +86,7 @@ const LanceSchema = mongoose.Schema({
 
 const Lance = mongoose.model("Lance", LanceSchema);
 
-
+//aba lances mongodb
 app.get("/lances", async (req, res) => {
   const lances = await Lance.find();
   res.json(lances);
@@ -105,7 +105,7 @@ app.post("/lances", async (req, res) => {
 
 
 
-
+//mostrar que o start esta funcionando npm start
 app.listen(3000, () => {
   try {
     conectarMongoDB();

@@ -4,7 +4,7 @@ const lancesEndPoint = '/lances';
 
 
 
-
+//cadastrar o usuario
 async function cadastrarUsuario() {
     const URLcompleta = `${protocolo}${baseURL}/signup`;
     let loginInput = document.querySelector('#loginInput');
@@ -58,7 +58,7 @@ try {
 
 }
 
-
+//fazer login no site
 async function realizarLogin() {
     const URLcompleta = `${protocolo}${baseURL}/login`;
     let loginEmail = document.querySelector('#login-email');
